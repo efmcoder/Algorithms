@@ -1,14 +1,15 @@
+//repl>it is missing the console.log as shown on line 34 below. You need to include this
 function caeserCipher(str, num)
 {
   num = num % 26;
   var lowerCaseLetters = str.toLowerCase();
-  var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-  var newString = '';
+  var alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+  var newString = "";
 
   for (var i = 0; i < lowerCaseLetters.length; i++)
   {
     var currentLetter = lowerCaseLetters[i];
-    if(currentLetter == ' ')
+    if(currentLetter == "")
     {
       newString += currentLetter;
       continue;
@@ -30,5 +31,4 @@ function caeserCipher(str, num)
   return newString;
 }
 
-caeserCipher('Zoo Keeper', 2);
-caeserCipher("Bee Master", 2);
+console.log(caeserCipher('Zoo Keeper', 2));

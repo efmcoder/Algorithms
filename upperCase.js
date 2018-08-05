@@ -1,4 +1,4 @@
-//To change to lower case. Not really working
+//i. To change to lower case. Not really working
 var str = "HELLO WORLD";
 str = str.replace
 (
@@ -11,7 +11,7 @@ function (a, w1, w2)
 );
 console.log(str);
 
-//To change to upper case
+//ii. To change to upper case
   var mystr = "Hello World";
   mystr = mystr.toUpperCase();
   console.log(mystr);
