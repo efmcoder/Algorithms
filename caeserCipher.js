@@ -31,3 +31,4 @@ function caeserCipher(str, num)
 }
 
 caeserCipher('Zoo Keeper', 2);
+caeserCipher("Bee Master", 2);
