@@ -8,7 +8,7 @@ function caeserCipher(str, num)
   for (var i = 0; i < lowerCaseLetters.length; i++)
   {
     var currentLetter = lowerCaseLetters[i];
-    if(currentLetter === ' ')
+    if(currentLetter == ' ')
     {
       newString += currentLetter;
       continue;
@@ -21,7 +21,7 @@ function caeserCipher(str, num)
     // else newString += alphabet[newIndex];
     if (newIndex > 25) newIndex = newIndex - 26;
     if (newIndex < 0) newIndex = 26 + newIndex;
-    if (str[i] === currentLetter.toUpperCase())
+    if (str[i] == currentLetter.toUpperCase())
     {
       newString += alphabet[newIndex].toUpperCase();
     }

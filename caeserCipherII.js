@@ -9,7 +9,7 @@ function caesarCipher(str, num) {
 	var newIndex;
 	for(i = 0; i<lowerCaseString.length; i++) {
 		currentLetter = lowerCaseString[i];
-		if (currentLetter === " ") {
+		if (currentLetter == " ") {
 			newString += currentLetter;
 			continue; }
 		currentIndex = alphabet.indexOf(currentLetter);
@@ -23,5 +23,5 @@ function caesarCipher(str, num) {
 		else newString += alphabet[newIndex]; }
 	return newString; }
 
-caesarCipher("zoo keeper", 2);
+caesarCipher("Zoo Keeper", 2);
 //console.log("hello World");

@@ -2,7 +2,7 @@ function fizzBuzz(num)
 {
   for(var i = 1; i <= num; i++)
   {
-    if(i % 15 == 0)
+    if(i % 2 == 0 && i % 3 == 0)
     console.log("fizzBuzz");
 
     else if (i % 3 == 0)
@@ -15,4 +15,4 @@ function fizzBuzz(num)
   }
 }
 fizzBuzz(30);
-//Traditional fizzBuzz code
+//Return "fizzBuzz" if fully divisible by 2 and 3, "fizz" if fully divisible by 3, and "buzz" if fully divisible by 5.
