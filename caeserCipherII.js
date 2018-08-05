@@ -30,4 +30,4 @@ function caeserCipher(str, num)
   }
   return newString;
 }
-console.log(caeserCipher("Zoo Keeper", 2));
+console.log(caeserCipher("Java Script", -900));
