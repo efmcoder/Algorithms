@@ -1,5 +1,6 @@
 //A space between " " counts the number of times each WORD appears
 //No space between "" counts the number of times each LETTER appears
+//This code is just to show the count. See harmlessRansomNoteII for full code
 function harmlessRansomNote(noteText, magazineText){
   var noteArr = noteText.split(" ");
   var magazineArr = magazineText.split(" ");
