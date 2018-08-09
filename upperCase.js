@@ -1,17 +1,22 @@
-//i. To change to lower case. Not really working
+//i. To change to lower case.
 var str = "HELLO WORLD";
-str = str.replace
+str = str.toLowerCase();
+console.log(str);
+
+//ii. Code below not working
+/*str = str.replace
 (
   /([A-Z]) ([A-Z]+)/g,
-  /*g = anonymous generator*/
+  //g = anonymous generator
 function (a, w1, w2)
 {
-  return w1 + " " + w2.toLowerCase();;
+  return w1.toLowerCase + " " + w2.toLowerCase();;
 }
 );
 console.log(str);
 
-//ii. To change to upper case
-  var mystr = "Hello World";
+
+iii. To change to upper case. This is working*/
+var mystr = "Hello World";
   mystr = mystr.toUpperCase();
   console.log(mystr);
