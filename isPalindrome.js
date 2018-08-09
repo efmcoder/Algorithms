@@ -1,11 +1,11 @@
 
-//A space between " " counts the number of times each WORD appears
-//No space between "" counts the number of times each LETTER appears
+//A space between " " looks at the WORDS. Is always returning true so is it looking to see if the letters are part of the alphabet?
+//No space between "" looks at the LETTERS
 function isPalindrome(string){
   string = string.toLowerCase();
-  var charactersArr = string.split(" "); //1st array has all characters including punctuation & spaces
+  var charactersArr = string.split(""); //1st array has all characters including punctuation & spaces
   //ignore any character not a letter
-  var validCharacters = "abcdefghijklmnopqrstuvwxyz".split(" "); //2nd array is only the alphabet
+  var validCharacters = "abcdefghijklmnopqrstuvwxyz".split(""); //2nd array is only the alphabet
 
 //BLOCK CODE BELOW SAYS: CHECK THE FIRST LETTER (index 0) and if it's part of our valid characters, push it into
 //the lettersArry.
@@ -17,7 +17,7 @@ var lettersArr = [];
   charactersArr.forEach(char => {
     if (validCharacters.indexOf(char) > -1) lettersArr.push(char);
   });
-if (lettersArr.join(" ") === lettersArr.reverse().join(" ")) return true;
+if (lettersArr.join("") === lettersArr.reverse().join("")) return true;
 else return false;
 }
-console.log(isPalindrome("Madam, I'm Adam"));
+console.log(isPalindrome("race car"));
