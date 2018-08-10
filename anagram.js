@@ -1,11 +1,16 @@
-function isAnagram(wordone, wordtwo){
+function isAnagram(str1, str2){
 
-  var wordArr = string.split(" ");
+  var str1Arr = string.split(" ");
+  var str2Arr = string.split(" ");
+
   var validCharacters = "abcdefghijklmnopqrstuvwxyz".split(" ");
 
+  if(str1 === str2){
+    isAnagram = true;
+  } else{
+    isAnagram = false;
+  });
 
-  wordArr.forEach(char => {
-    if validCharacters.indexOf(char) > -1)
-  })
 
 }
+console.log(isAnagram(dog,god));
