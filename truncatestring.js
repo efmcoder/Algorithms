@@ -11,7 +11,7 @@
   }
 
 }
-console.log(truncateString("please let me marry Duncan", 9));*/
+console.log(truncateString("Please pass me the salt", 9));*/
 
 function truncateString (str, num) {
 
@@ -23,4 +23,4 @@ function truncateString (str, num) {
   }
 
 }
-console.log(truncateString("please let me marry Duncan", 1));
+console.log(truncateString("Please pass me the salt", 1));

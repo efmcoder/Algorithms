@@ -10,4 +10,4 @@ function combineArrays(arr1, arr2, n){
   return localArray;
 
 }
-console.log(combineArrays([1,2,3], [4,5,6]));
+console.log(combineArrays([1,2,3], [4,5,6],2));
