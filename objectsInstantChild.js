@@ -6,12 +6,10 @@ function Animal(){}
     }
   };
 
+//CODE BELOW HAS DOG INHERITING FROM ANIMAL
 function Dog(){}
-Dog.prototype = {
-  constructo: Dog,
-  eat: function(){
-    console.log("nom");
-  }
-}
+
+Dog.prototype = Object.create(Animal.prototype);
+
 let beagle = new Dog();
-console.log(beagle.eat());
+beagle.eat();
